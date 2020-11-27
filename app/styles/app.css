@@ -1,0 +1,56 @@
+body {
+  font-family: verdana;
+  color: #009999;
+  padding: 10%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+#title {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.small-text {
+  font-size: 11px;
+}
+
+.row {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 5px 0 0 5px;
+  height: 50px;
+}
+
+.header div {
+  height: 30px;
+  border: 0;
+}
+
+.header .radio-button, .title-column {
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-column {
+  display: inline-flex;
+  width: 100px;
+}
+
+.radio-button {
+  display: flex;
+  width: 80px;
+  height: 40px;
+  border:  1px solid #00b3b3;
+  border-radius: 3px;
+}
