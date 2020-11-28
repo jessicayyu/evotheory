@@ -23,6 +23,7 @@ body {
 }
 
 .row {
+  box-sizing: border-box;
   display: inline-flex;
   justify-content: space-around;
   flex-direction: row;
@@ -53,4 +54,36 @@ body {
   height: 40px;
   border:  1px solid #00b3b3;
   border-radius: 3px;
+}
+
+#slider-row {
+  margin-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.slider {
+  box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  padding: 5px;
+  flex-direction: row;
+  border: 1px solid #00b3b3;
+}
+
+.slider.on {
+  justify-content: flex-start;
+}
+
+.slider.off {
+  justify-content: flex-end;
+}
+
+.slider-button {
+  box-sizing: border-box;
+  height: 100%;
+  width: 50px;
+  border-radius: 17px;
+  border: 1px solid #00b3b3;
 }
