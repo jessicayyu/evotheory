@@ -1,6 +1,8 @@
+{{#each @model as |gene|}}
 <div class="row">
-  <div class="title-column">Eyes</div>
+  <div class="title-column">{{gene}}</div>
   <div class="radio-button"></div>
   <div class="radio-button"></div>
   <div class="radio-button"></div>
 </div>
+{{/each}}
