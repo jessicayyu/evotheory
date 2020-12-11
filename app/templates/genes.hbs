@@ -1,8 +1,4 @@
-{{#each @model as |gene|}}
-<div class="row">
-  <div class="title-column">{{gene}}</div>
-  <div class="radio-button"></div>
-  <div class="radio-button"></div>
-  <div class="radio-button"></div>
-</div>
-{{/each}}
+<SelectRow
+  {{!-- @caption="Hair / Ears / Hat" --}}
+  @genes={{@model}}
+/>
