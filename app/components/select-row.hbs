@@ -1,6 +1,6 @@
 {{#each @genes as |gene|}}
 <div class="row">
-  <div class="title-column">
+  <div class="title-column" {{on 'click' (fn this.showMessage gene)}}>
     {{gene}}
     {{!-- <span class="small-text">
       {{@caption}}
