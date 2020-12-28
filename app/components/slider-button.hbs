@@ -1,0 +1,17 @@
+{{#if this.isSelected}}
+  <div class="slider on" {{on 'click' (fn this.toggleSlider)}}>
+    <div class="label">
+      on
+    </div>
+    <div class="slider-button" >
+    </div>
+  </div>
+{{else}}
+  <div class="slider off" {{on 'click' (fn this.toggleSlider)}}>
+    <div class="slider-button">
+    </div>
+    <div class="label">
+      off
+    </div>
+  </div>
+{{/if}}
