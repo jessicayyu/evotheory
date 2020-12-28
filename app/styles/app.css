@@ -59,6 +59,15 @@ body {
   align-items: center;
 }
 
+.radio-button-on {
+  border: 1px solid #00b3b3;
+  background: #c2efef;
+}
+
+.radio-button:hover {
+  cursor: pointer;
+}
+
 #slider-row {
   margin-top: 30px;
   padding-left: 100px;

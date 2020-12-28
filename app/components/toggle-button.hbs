@@ -1,3 +1,7 @@
-<div class="radio-button" {{on 'click' (fn this.toggleButton)}}>
-  {{yield}}
-</div>
+{{#if this.isSelected}}
+  <div class="radio-button radio-button-on" {{on 'click' (fn this.toggleButton)}}>
+  </div>
+{{else}}
+  <div class="radio-button" {{on 'click' (fn this.toggleButton)}}>
+  </div>
+{{/if}}
