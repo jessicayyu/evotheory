@@ -1,6 +1,11 @@
+:root {
+  --main-txt-color: #666;
+  --teal-theme: #00b3b3;
+}
+
 body {
   font-family: verdana;
-  color: #009999;
+  color: var(--main-txt-color);
   padding: 10%;
 }
 
@@ -10,13 +15,17 @@ body {
   width: 450px;
 }
 
-#title {
+.title {
   display: flex;
   text-align: center;
   justify-content: space-around;
   margin-bottom: 30px;
-  margin-left: 120px;
   font-size: 20px;
+  color: var(--main-txt-color);
+}
+
+#genes.title {
+  margin-left: 120px;
 }
 
 .small-text {
@@ -44,9 +53,27 @@ body {
   flex-direction: column;
 }
 
+.nav.link, .nav.link:visited {
+  color: var(--teal-theme);
+  text-decoration: none;
+}
+
+.nav.link:hover {
+  color: var(--main-txt-color);
+}
+
+.desc {
+  text-align: center;
+}
+
+.row.header {
+  color: #666;
+}
+
 .title-column {
   display: inline-flex;
   width: 100px;
+  var(--main-txt-color);
 }
 
 .radio-button {
@@ -54,16 +81,16 @@ body {
   box-sizing: border-box;
   width: 80px;
   height: 40px;
-  border:  1px solid #00b3b3;
+  border:  1px solid var(--teal-theme);
   border-radius: 25px;
   justify-content: space-around;
   align-items: center;
 }
 
 .radio-button-on {
-  border: 1px solid #00b3b3;
+  border: 1px solid var(--teal-theme);
   background: #c2efef;
-  color: #00b3b3;
+  color: var(--teal-theme);
 }
 
 .radio-button:hover {
@@ -84,7 +111,7 @@ body {
   border-radius: 25px;
   padding: 5px;
   flex-direction: row;
-  border: 1px solid #00b3b3;
+  border: 1px solid var(--teal-theme);
   align-items: center;
   justify-content: space-between;
 }
@@ -108,7 +135,7 @@ body {
   height: 100%;
   width: 50px;
   border-radius: 17px;
-  border: 1px solid #00b3b3;
+  border: 1px solid var(--teal-theme);
   background: #fff;
 }
 
@@ -126,5 +153,14 @@ body {
 }
 
 .slider.on .label {
-  color: #00b3b3;
+  color: var(--teal-theme);
+}
+
+.footer {
+  margin-top: 50px;
+  display: flex;
+  height: 50px;
+  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
 }
