@@ -9,9 +9,9 @@ module('Acceptance | genes', function(hooks) {
     await visit('/');
     assert.equal(currentURL(), '/');
     assert.dom('.nav.link').hasText('Home');
-    assert.dom('.nav.link').hasText('Tamagotchi Evolutionary Theory');
+    assert.dom('#evotheory').hasText('Tamagotchi Evolutionary Theory');
 
-    await click('.nav.link');
+    await click('#evotheory');
   
     assert.equal(currentURL(), '/genes');
   });

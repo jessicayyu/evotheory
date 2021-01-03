@@ -8,22 +8,9 @@ module('Integration | Component | toggle-button', function(hooks) {
 
   test('it renders', async function(assert) {
     await render(hbs`
-      <ToggleButton/>
+      <ToggleButton />
     `);
-  //   // Set any properties with this.set('myProperty', 'value');
-  //   // Handle any actions with this.set('myAction', function(val) { ... });
-
-  //   await render(hbs`<ToggleButton />`);
-
-  //   assert.equal(this.element.textContent.trim(), '');
-
-  //   // Template block usage:
-  //   await render(hbs`
-  //     <ToggleButton>
-  //       template block text
-  //     </ToggleButton>
-  //   `);
-
-  //   assert.equal(this.element.textContent.trim(), 'template block text');
+    
+    assert.dom('.radio-button').exists();
   });
 });
