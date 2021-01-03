@@ -1,7 +1,12 @@
 {{#each @genes as |gene|}}
 <div class="row">
   <div class="title-column" {{on 'click' (fn this.showMessage gene)}}>
-    {{gene}}
+    <span class='title-text'>
+      {{gene.title}}
+    </span>
+    <span class='subtitle'>
+      {{gene.subtitle}}
+    </span>
   </div>
   <ToggleButton/>
   <ToggleButton/>

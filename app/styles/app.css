@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 450px;
+  justify-content: space-around;
 }
 
 .title {
@@ -28,7 +29,7 @@ body {
   margin-left: 120px;
 }
 
-.small-text {
+.subtitle {
   font-size: 11px;
 }
 

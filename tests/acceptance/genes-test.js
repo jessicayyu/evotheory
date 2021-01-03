@@ -8,6 +8,7 @@ module('Acceptance | genes', function(hooks) {
   test('visiting /', async function(assert) {
     await visit('/');
     assert.equal(currentURL(), '/');
+    assert.dom('.nav.link').hasText('Home');
     assert.dom('.nav.link').hasText('Tamagotchi Evolutionary Theory');
 
     await click('.nav.link');
